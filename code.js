@@ -1,12 +1,9 @@
-function countSheep(num){
-    let myNum = 1;
-    let text = " Sheep...";
-    
-    for (var i = 1; i < num; i++) {
-    text = text + (myNum + i) + text;
-
+var countSheep = function (num){
+    let text = '';
+    for (let i = 1; i <= num; i++) {
+    text += i + ' sheep...';
     }
-  console.log(myNum + text);
+  return text;
 }
 
 console.log(countSheep(1)); // Return "1 sheep..."
